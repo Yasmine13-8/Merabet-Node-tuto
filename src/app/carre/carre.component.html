@@ -1,20 +1,19 @@
 
   <div class="container">
     <div class="ptCareee1">
-      <
-      <app-petit-carre></app-petit-carre>
+      <app-petit-carre [color]="'red'" (changeColor)="changeColor($event)"></app-petit-carre>
     </div>
     <div class="ptCareee2">
-      <app-petit-carre></app-petit-carre>
+      <app-petit-carre [color]="'green'" (changeColor)="changeColor($event)"></app-petit-carre>
     </div>
   </div>
 
   <div class="container2">
     <div class="ptCareee3">
-      <app-petit-carre></app-petit-carre>
+      <app-petit-carre [color]="'cadetblue'" (changeColor)="changeColor($event)"></app-petit-carre>
     </div>
     <div class="ptCareee4">
-      <app-petit-carre></app-petit-carre>
+      <app-petit-carre [color]="'yellow'" (changeColor)="changeColor($event)"></app-petit-carre>
     </div>
   </div>
 

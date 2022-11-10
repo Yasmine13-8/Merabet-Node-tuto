@@ -1,7 +1,6 @@
-<div class="parent">
+<div [ngClass]="appColor">
   <app-header></app-header>
-  <app-carre> </app-carre>
+  <app-carre (appliquerColor)="appliquerColor(appColor)"> </app-carre>
   <app-footer></app-footer>
-
 </div>
 

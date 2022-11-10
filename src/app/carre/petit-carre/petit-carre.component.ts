@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-petit-carre',
@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PetitCarreComponent implements OnInit {
 
+
+  @Input() color: string = '';
+  @Output() changeColor : EventEmitter<string> = new EventEmitter<string>();
+
   constructor() { }
+
 
   ngOnInit(): void {
   }

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Merabet-Node-tuto';
+
+  public appColor : string = '';
+
+  public appliquerColor (colorApp: string){
+    this.appColor=colorApp;
+  }
 }
