@@ -1,0 +1,40 @@
+.carre{
+
+  width: 400px;
+  height: 400px;
+}
+.ptCareee1{
+  background-color: red;
+  width:200px;
+  height:200px;
+}
+
+.ptCareee2{
+  background-color: green;
+  width:200px;
+  height:200px;
+}
+
+.ptCareee3{
+  background-color: cadetblue;
+  width:200px;
+  height:200px;
+}
+
+.ptCareee4{
+  background-color: yellow;
+  width:200px;
+  height:200px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
