@@ -1,6 +1,8 @@
-<div [ngClass]="appColor">
-  <app-header></app-header>
-  <app-carre (appliquerColor)="appliquerColor(appColor)"> </app-carre>
-  <app-footer></app-footer>
+<app-header></app-header>
+<div class="parent" [style.background]="backcolor">
+    <app-carre (colorEmitted)="handlerColor($event)"> </app-carre>
 </div>
+
+<app-footer></app-footer>
+
 

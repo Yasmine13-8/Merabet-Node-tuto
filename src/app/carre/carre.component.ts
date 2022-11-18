@@ -7,15 +7,15 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class CarreComponent implements OnInit {
 
-  public color : string = '';
 
-  @Output() appliquerColor : EventEmitter<string> = new EventEmitter<string>();
+  @Output() colorEmitted: EventEmitter<string> = new EventEmitter<string>();
 
-  constructor() { }
+  constructor() {
+  }
 
 
-  public changeColor (color : string){
-        this.color = color;
+  handler(valueEmitted: string) {
+    this.colorEmitted.emit(valueEmitted);
   }
 
   ngOnInit(): void {

@@ -1,40 +1,21 @@
-.carre{
+app-petit-carre{
+  padding: 0px;
+  transition: .5s;
+}
 
-  width: 400px;
+app-petit-carre:hover{
+  padding: 5px;
+  cursor: pointer;
+}
+
+div{
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
   height: 400px;
-}
-.ptCareee1{
-  background-color: red;
-  width:200px;
-  height:200px;
-}
-
-.ptCareee2{
-  background-color: green;
-  width:200px;
-  height:200px;
-}
-
-.ptCareee3{
-  background-color: cadetblue;
-  width:200px;
-  height:200px;
-}
-
-.ptCareee4{
-  background-color: yellow;
-  width:200px;
-  height:200px;
-}
-
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 400px;
+  gap: 5px;
+  box-sizing: border-box;
 }

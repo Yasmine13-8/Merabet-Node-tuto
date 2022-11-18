@@ -7,14 +7,17 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class PetitCarreComponent implements OnInit {
 
+  @Input() backcolor: string = '#F25022';
 
-  @Input() color: string = '';
-  @Output() changeColor : EventEmitter<string> = new EventEmitter<string>();
+  @Output() rectangleClicked : EventEmitter<string> = new EventEmitter<string>();
 
   constructor() { }
 
-
   ngOnInit(): void {
+  }
+
+  onclick() {
+    this.rectangleClicked.emit(this.backcolor);
   }
 
 }

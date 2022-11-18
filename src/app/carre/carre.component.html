@@ -1,20 +1,27 @@
-
+<!--
   <div class="container">
     <div class="ptCareee1">
-      <app-petit-carre [color]="'red'" (changeColor)="changeColor($event)"></app-petit-carre>
+      <app-petit-carre [backcolor]="'red'" (changeColor)="changeColor($event)"></app-petit-carre>
     </div>
     <div class="ptCareee2">
-      <app-petit-carre [color]="'green'" (changeColor)="changeColor($event)"></app-petit-carre>
+      <app-petit-carre [backcolor]="'green'" (changeColor)="changeColor($event)"></app-petit-carre>
     </div>
   </div>
 
   <div class="container2">
     <div class="ptCareee3">
-      <app-petit-carre [color]="'cadetblue'" (changeColor)="changeColor($event)"></app-petit-carre>
+      <app-petit-carre [backcolor]="'cadetblue'" (changeColor)="changeColor($event)"></app-petit-carre>
     </div>
     <div class="ptCareee4">
-      <app-petit-carre [color]="'yellow'" (changeColor)="changeColor($event)"></app-petit-carre>
+      <app-petit-carre [backcolor]="'yellow'" (changeColor)="changeColor($event)"></app-petit-carre>
     </div>
   </div>
+-->
 
+<div>
+  <app-petit-carre (rectangleClicked)="handler($event)"  [backcolor]="'#F25022'" ></app-petit-carre>
+  <app-petit-carre (rectangleClicked)="handler($event)" [backcolor]="'#7FBA00'" ></app-petit-carre>
+  <app-petit-carre (rectangleClicked)="handler($event)" [backcolor]="'#00A4EF'" ></app-petit-carre>
+  <app-petit-carre (rectangleClicked)="handler($event)"  [backcolor]="'#FFB900'" ></app-petit-carre>
+</div>
 

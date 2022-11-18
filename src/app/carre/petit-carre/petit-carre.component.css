@@ -1,7 +1,5 @@
-.petitCaree{
-
-  width:200px;
-  height:200px;
-  margin: 0px;
+div{
+  height:100%;
+  width: 100%;
   border: 1px solid black;
 }

@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Merabet-Node-tuto';
+  title = 'Merabet-Hadjour-TP';
 
-  public appColor : string = '';
+  public backcolor : string = '#FFFFFF';
 
-  public appliquerColor (colorApp: string){
-    this.appColor=colorApp;
+  public handlerColor (valueEmitted: string){
+    this.backcolor= valueEmitted;
   }
 }
